@@ -1,0 +1,16 @@
+2026-07-05 02:15:22,710 | train | INFO | Loading processed data from data/processed/telco_churn_processed.csv
+2026-07-05 02:15:22,778 | train | INFO | Train shape: (5634, 25), Test shape: (1409, 25)
+2026-07-05 02:15:22,779 | train | INFO | scale_pos_weight computed: 2.7686
+2026-07-05 02:15:26,555 | train | INFO | Training completed in 0.58s
+2026-07-05 02:15:26,679 | train | INFO | Recall: 0.906 | Precision: 0.444 | F1: 0.596
+2026-07-05 02:15:42,874 | train | INFO | Model saved locally to models/xgboost_churn_model.pkl
+2026-07-05 02:15:42,877 | train | INFO | Feature columns saved to models/feature_columns.json
+2026-07-05 02:15:42,877 | train | INFO | MLflow run ID: 40c3c754d7804a0786e81d621b8c942a
+2026-07-05 02:27:32,268 | train | INFO | Loading processed data from data/processed/telco_churn_processed.csv
+2026-07-05 02:27:32,348 | train | INFO | Train shape: (5634, 25), Test shape: (1409, 25)
+2026-07-05 02:27:32,349 | train | INFO | scale_pos_weight computed: 2.7686
+2026-07-05 02:27:36,247 | train | INFO | Training completed in 0.59s
+2026-07-05 02:27:36,416 | train | INFO | Recall: 0.906 | Precision: 0.444 | F1: 0.596
+2026-07-05 02:27:50,591 | train | INFO | Model saved locally to models/xgboost_churn_model.pkl
+2026-07-05 02:27:50,593 | train | INFO | Feature columns saved to models/feature_columns.json
+2026-07-05 02:27:50,593 | train | INFO | MLflow run ID: 598dd79fb94f48d48caea2d329b8e38f

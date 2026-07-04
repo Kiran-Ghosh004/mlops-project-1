@@ -1,0 +1,6 @@
+2026-07-05 02:11:35,382 | tune | INFO | Loading processed data from data/processed/telco_churn_processed.csv
+2026-07-05 02:11:35,498 | tune | INFO | scale_pos_weight computed: 2.7686
+2026-07-05 02:11:35,499 | tune | INFO | Starting Optuna study: 30 trials, maximizing recall
+2026-07-05 02:11:55,973 | tune | INFO | Best recall: 0.9251
+2026-07-05 02:11:55,974 | tune | INFO | Best params: {'n_estimators': 311, 'learning_rate': 0.032956102110138226, 'max_depth': 9, 'subsample': 0.9258506703074961, 'colsample_bytree': 0.8020044603856303, 'min_child_weight': 6, 'gamma': 4.554189015081027, 'reg_alpha': 4.213622531541319, 'reg_lambda': 0.5252679820632058}
+2026-07-05 02:11:55,976 | tune | INFO | Tuning results saved to configs/tuning_results.json

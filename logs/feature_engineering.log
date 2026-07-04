@@ -1,0 +1,14 @@
+2026-07-05 02:10:08,746 | feature_engineering | INFO | Loading preprocessed data from data/interim/preprocessed_telco_churn.csv
+2026-07-05 02:10:08,801 | feature_engineering | INFO | Input shape: (7043, 31)
+2026-07-05 02:10:08,807 | feature_engineering | INFO | Collapsed 6 'No internet service' columns into 'No_internet_service'
+2026-07-05 02:10:08,811 | feature_engineering | INFO | Renamed 'MultipleLines_No phone service' to 'No_phone_service'
+2026-07-05 02:10:08,811 | feature_engineering | INFO | Output shape: (7043, 26)
+2026-07-05 02:10:08,812 | feature_engineering | INFO | Final columns: ['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'PaperlessBilling', 'MonthlyCharges', 'TotalCharges', 'Churn', 'MultipleLines_Yes', 'InternetService_Fiber optic', 'InternetService_No', 'OnlineSecurity_Yes', 'OnlineBackup_Yes', 'DeviceProtection_Yes', 'TechSupport_Yes', 'StreamingTV_Yes', 'StreamingMovies_Yes', 'Contract_One year', 'Contract_Two year', 'PaymentMethod_Credit card (automatic)', 'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check', 'No_internet_service', 'No_phone_service']
+2026-07-05 02:10:08,888 | feature_engineering | INFO | Processed data saved to data/processed/telco_churn_processed.csv
+2026-07-05 02:27:24,986 | feature_engineering | INFO | Loading preprocessed data from data/interim/preprocessed_telco_churn.csv
+2026-07-05 02:27:25,053 | feature_engineering | INFO | Input shape: (7043, 31)
+2026-07-05 02:27:25,059 | feature_engineering | INFO | Collapsed 6 'No internet service' columns into 'No_internet_service'
+2026-07-05 02:27:25,063 | feature_engineering | INFO | Renamed 'MultipleLines_No phone service' to 'No_phone_service'
+2026-07-05 02:27:25,063 | feature_engineering | INFO | Output shape: (7043, 26)
+2026-07-05 02:27:25,064 | feature_engineering | INFO | Final columns: ['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'PaperlessBilling', 'MonthlyCharges', 'TotalCharges', 'Churn', 'MultipleLines_Yes', 'InternetService_Fiber optic', 'InternetService_No', 'OnlineSecurity_Yes', 'OnlineBackup_Yes', 'DeviceProtection_Yes', 'TechSupport_Yes', 'StreamingTV_Yes', 'StreamingMovies_Yes', 'Contract_One year', 'Contract_Two year', 'PaymentMethod_Credit card (automatic)', 'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check', 'No_internet_service', 'No_phone_service']
+2026-07-05 02:27:25,140 | feature_engineering | INFO | Processed data saved to data/processed/telco_churn_processed.csv

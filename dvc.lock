@@ -1,0 +1,132 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/data_ingestion.py
+    deps:
+    - path: data/raw/Telco-Customer-Churn.csv
+      hash: md5
+      md5: 0f9de68e012bd3aed5fa7cdc9fc421af
+      size: 977501
+    - path: src/data_ingestion.py
+      hash: md5
+      md5: f4918de5f25a92918b0c73478c5c1443
+      size: 2134
+    - path: src/utils.py
+      hash: md5
+      md5: 344b56364cf51bb027074de0f0606a8f
+      size: 1181
+    outs:
+    - path: data/raw/validated_telco_churn.csv
+      hash: md5
+      md5: 7f07de26b054de4c36eed95a1277fe21
+      size: 978285
+  data_preprocessing:
+    cmd: python src/data_preprocessing.py
+    deps:
+    - path: data/raw/validated_telco_churn.csv
+      hash: md5
+      md5: 7f07de26b054de4c36eed95a1277fe21
+      size: 978285
+    - path: src/data_preprocessing.py
+      hash: md5
+      md5: 9c6ec099d78cc78f0a834da3808ac389
+      size: 2785
+    - path: src/utils.py
+      hash: md5
+      md5: 344b56364cf51bb027074de0f0606a8f
+      size: 1181
+    outs:
+    - path: data/interim/preprocessed_telco_churn.csv
+      hash: md5
+      md5: 05b47587c6b179e2170131a5873abe6e
+      size: 510137
+  feature_engineering:
+    cmd: python src/feature_engineering.py
+    deps:
+    - path: data/interim/preprocessed_telco_churn.csv
+      hash: md5
+      md5: 05b47587c6b179e2170131a5873abe6e
+      size: 510137
+    - path: src/feature_engineering.py
+      hash: md5
+      md5: 779ba2fb6d5f92800c4e801199226943
+      size: 2677
+    - path: src/utils.py
+      hash: md5
+      md5: 344b56364cf51bb027074de0f0606a8f
+      size: 1181
+    outs:
+    - path: data/processed/telco_churn_processed.csv
+      hash: md5
+      md5: a55bdfc782805bf237de36443f2dbed5
+      size: 439508
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/processed/telco_churn_processed.csv
+      hash: md5
+      md5: a55bdfc782805bf237de36443f2dbed5
+      size: 439508
+    - path: src/train.py
+      hash: md5
+      md5: b112a975b52dacc77b72376c7f54d0ed
+      size: 4521
+    - path: src/utils.py
+      hash: md5
+      md5: 344b56364cf51bb027074de0f0606a8f
+      size: 1181
+    params:
+      configs/config.yaml:
+        model.best_params:
+          n_estimators: 522
+          learning_rate: 0.16263699141029567
+          max_depth: 5
+          subsample: 0.8997157589319335
+          colsample_bytree: 0.5038303325931903
+          min_child_weight: 8
+          gamma: 3.820045243367761
+          reg_alpha: 2.3861928586250136
+          reg_lambda: 4.440032624822587
+          random_state: 42
+          n_jobs: -1
+          eval_metric: logloss
+        train.random_state: 42
+        train.test_size: 0.2
+        train.threshold: 0.3
+    outs:
+    - path: models/feature_columns.json
+      hash: md5
+      md5: c70e996e901ba7ca9fb5398099f41eb7
+      size: 601
+    - path: models/xgboost_churn_model.pkl
+      hash: md5
+      md5: 253a0e67365b2ad060bb9e05bae5e484
+      size: 401777
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+    - path: data/processed/telco_churn_processed.csv
+      hash: md5
+      md5: a55bdfc782805bf237de36443f2dbed5
+      size: 439508
+    - path: models/xgboost_churn_model.pkl
+      hash: md5
+      md5: 253a0e67365b2ad060bb9e05bae5e484
+      size: 401777
+    - path: src/evaluate.py
+      hash: md5
+      md5: c847e9c6ae7b107c8879cba96f360f0f
+      size: 3838
+    - path: src/utils.py
+      hash: md5
+      md5: 344b56364cf51bb027074de0f0606a8f
+      size: 1181
+    outs:
+    - path: logs/confusion_matrix.png
+      hash: md5
+      md5: 08ac74e9e5cc2d476ac0fb5b4ad5c768
+      size: 17442
+    - path: logs/evaluation_report.json
+      hash: md5
+      md5: f35bad988c5cc8bd5e43f4fe7d449e27
+      size: 648

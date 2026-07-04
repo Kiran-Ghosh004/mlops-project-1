@@ -1,0 +1,17 @@
+2026-07-05 02:04:35,427 | data_ingestion | ERROR | Raw data file not found at: data/raw/Telco-Customer-Churn.csv
+2026-07-05 02:05:42,638 | data_ingestion | INFO | Loading raw data from data/raw/Telco-Customer-Churn.csv
+2026-07-05 02:05:42,680 | data_ingestion | INFO | Raw data shape: (7043, 21)
+2026-07-05 02:05:42,700 | data_ingestion | INFO | Churn distribution:
+Churn
+No     0.73463
+Yes    0.26537
+Name: proportion, dtype: float64
+2026-07-05 02:05:42,757 | data_ingestion | INFO | Validated data saved to data/raw/validated_telco_churn.csv
+2026-07-05 02:27:19,748 | data_ingestion | INFO | Loading raw data from data/raw/Telco-Customer-Churn.csv
+2026-07-05 02:27:19,828 | data_ingestion | INFO | Raw data shape: (7043, 21)
+2026-07-05 02:27:19,850 | data_ingestion | INFO | Churn distribution:
+Churn
+No     0.73463
+Yes    0.26537
+Name: proportion, dtype: float64
+2026-07-05 02:27:19,940 | data_ingestion | INFO | Validated data saved to data/raw/validated_telco_churn.csv

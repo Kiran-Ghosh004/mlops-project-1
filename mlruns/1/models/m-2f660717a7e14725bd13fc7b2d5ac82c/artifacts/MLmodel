@@ -1,0 +1,22 @@
+artifact_path: file:C:/Users/kiran/OneDrive/Desktop/uni/mlops-project-1/mlruns/1/models/m-2f660717a7e14725bd13fc7b2d5ac82c/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.13.5
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.3.0
+mlflow_version: 3.14.0
+model_id: m-2f660717a7e14725bd13fc7b2d5ac82c
+model_size_bytes: 392526
+model_uuid: m-2f660717a7e14725bd13fc7b2d5ac82c
+prompts: null
+run_id: 40c3c754d7804a0786e81d621b8c942a
+utc_time_created: '2026-07-04 20:45:26.785622'

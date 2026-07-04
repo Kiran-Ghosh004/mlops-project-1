@@ -1,0 +1,44 @@
+2026-07-05 02:17:53,262 | evaluate | INFO | Loading model from models/xgboost_churn_model.pkl
+2026-07-05 02:17:53,526 | evaluate | INFO | Loading processed data from data/processed/telco_churn_processed.csv
+2026-07-05 02:17:53,675 | evaluate | INFO | Classification report:
+              precision    recall  f1-score   support
+
+           0      0.946     0.590     0.727      1035
+           1      0.444     0.906     0.596       374
+
+    accuracy                          0.674      1409
+   macro avg      0.695     0.748     0.662      1409
+weighted avg      0.813     0.674     0.692      1409
+
+2026-07-05 02:17:55,477 | evaluate | INFO | Confusion matrix saved to logs/confusion_matrix.png
+2026-07-05 02:17:55,480 | evaluate | INFO | Evaluation report saved to logs/evaluation_report.json
+2026-07-05 02:23:40,321 | evaluate | INFO | Loading model from models/xgboost_churn_model.pkl
+2026-07-05 02:23:40,499 | evaluate | INFO | Loading processed data from data/processed/telco_churn_processed.csv
+2026-07-05 02:23:40,608 | evaluate | INFO | Classification report:
+              precision    recall  f1-score   support
+
+           0      0.946     0.590     0.727      1035
+           1      0.444     0.906     0.596       374
+
+    accuracy                          0.674      1409
+   macro avg      0.695     0.748     0.662      1409
+weighted avg      0.813     0.674     0.692      1409
+
+2026-07-05 02:23:41,125 | evaluate | INFO | Confusion matrix saved to logs/confusion_matrix.png
+2026-07-05 02:23:41,129 | evaluate | INFO | Evaluation report saved to logs/evaluation_report.json
+2026-07-05 02:23:43,842 | evaluate | INFO | Evaluation complete.
+2026-07-05 02:28:00,511 | evaluate | INFO | Loading model from models/xgboost_churn_model.pkl
+2026-07-05 02:28:00,710 | evaluate | INFO | Loading processed data from data/processed/telco_churn_processed.csv
+2026-07-05 02:28:00,842 | evaluate | INFO | Classification report:
+              precision    recall  f1-score   support
+
+           0      0.946     0.590     0.727      1035
+           1      0.444     0.906     0.596       374
+
+    accuracy                          0.674      1409
+   macro avg      0.695     0.748     0.662      1409
+weighted avg      0.813     0.674     0.692      1409
+
+2026-07-05 02:28:02,891 | evaluate | INFO | Confusion matrix saved to logs/confusion_matrix.png
+2026-07-05 02:28:02,893 | evaluate | INFO | Evaluation report saved to logs/evaluation_report.json
+2026-07-05 02:28:06,053 | evaluate | INFO | Evaluation complete.

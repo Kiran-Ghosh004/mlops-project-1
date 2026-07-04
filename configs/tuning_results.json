@@ -1,0 +1,17 @@
+{
+  "best_recall": 0.9251336898395722,
+  "best_params": {
+    "n_estimators": 311,
+    "learning_rate": 0.032956102110138226,
+    "max_depth": 9,
+    "subsample": 0.9258506703074961,
+    "colsample_bytree": 0.8020044603856303,
+    "min_child_weight": 6,
+    "gamma": 4.554189015081027,
+    "reg_alpha": 4.213622531541319,
+    "reg_lambda": 0.5252679820632058
+  },
+  "scale_pos_weight": 2.768561872909699,
+  "threshold": 0.3,
+  "n_trials": 30
+}
