@@ -42,10 +42,11 @@ def preprocess_data(config_path: str = "configs/config.yaml") -> pd.DataFrame:
     logger.info(f"Input shape: {df.shape}")
 
     # --- Binary encoding ---
+# --- Binary encoding ---
     df[BINARY_COLS] = df[BINARY_COLS].replace({
-    "Yes": 1, "No": 0,
-    "Male": 1, "Female": 0
-}).infer_objects(copy=False)
+        "Yes": 1, "No": 0,
+        "Male": 1, "Female": 0
+    }).astype(int)
     logger.info(f"Binary encoded columns: {BINARY_COLS}")
 
     # --- One-hot encoding ---

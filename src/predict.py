@@ -54,10 +54,11 @@ class ChurnPredictor:
         df = df.copy()
 
         # --- Binary encoding ---
+        # --- Binary encoding ---
         df[BINARY_COLS] = df[BINARY_COLS].replace({
             "Yes": 1, "No": 0,
             "Male": 1, "Female": 0
-        })
+        }).astype(int)
 
         # --- One-hot encoding ---
         df = pd.get_dummies(df, columns=MULTI_CAT_COLS, drop_first=True)
