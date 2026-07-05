@@ -8,3 +8,9 @@
 2026-07-05 02:47:37,559 | predict | INFO | ChurnPredictor initialized: model and feature columns loaded.
 2026-07-05 02:47:47,571 | predict | INFO | Prediction made: {'churn_prediction': 1, 'churn_probability': 0.8162, 'threshold_used': 0.3}
 2026-07-05 02:48:27,577 | predict | INFO | Prediction made: {'churn_prediction': 0, 'churn_probability': 0.1696, 'threshold_used': 0.3}
+2026-07-05 02:49:42,312 | predict | INFO | ChurnPredictor initialized: model and feature columns loaded.
+2026-07-05 02:50:43,536 | predict | INFO | Prediction made: {'churn_prediction': 1, 'churn_probability': 0.7867, 'threshold_used': 0.3}
+2026-07-05 03:00:23,438 | predict | INFO | ChurnPredictor initialized: model and feature columns loaded.
+2026-07-05 03:29:12,630 | predict | INFO | ChurnPredictor initialized: model and feature columns loaded.
+2026-07-05 03:29:29,358 | predict | INFO | Prediction made: {'churn_prediction': 1, 'churn_probability': 0.7867, 'threshold_used': 0.3}
+2026-07-05 03:29:37,002 | predict | INFO | Prediction made: {'churn_prediction': 1, 'churn_probability': 0.7867, 'threshold_used': 0.3}
