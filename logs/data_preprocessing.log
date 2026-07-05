@@ -19,3 +19,10 @@
 2026-07-05 02:27:22,182 | data_preprocessing | WARNING | Found 11 NaNs in TotalCharges (tenure=0 customers). Filling with 0.
 2026-07-05 02:27:22,194 | data_preprocessing | INFO | Output shape: (7043, 31)
 2026-07-05 02:27:22,281 | data_preprocessing | INFO | Preprocessed data saved to data/interim/preprocessed_telco_churn.csv
+2026-07-05 21:12:17,902 | data_preprocessing | INFO | Loading ingested data from data/raw/validated_telco_churn.csv
+2026-07-05 21:12:18,012 | data_preprocessing | INFO | Input shape: (7043, 21)
+2026-07-05 21:12:18,048 | data_preprocessing | INFO | Binary encoded columns: ['gender', 'Partner', 'Dependents', 'PhoneService', 'PaperlessBilling', 'Churn']
+2026-07-05 21:12:18,077 | data_preprocessing | INFO | One-hot encoded columns: ['MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaymentMethod']
+2026-07-05 21:12:18,085 | data_preprocessing | WARNING | Found 11 NaNs in TotalCharges (tenure=0 customers). Filling with 0.
+2026-07-05 21:12:18,098 | data_preprocessing | INFO | Output shape: (7043, 31)
+2026-07-05 21:12:18,205 | data_preprocessing | INFO | Preprocessed data saved to data/interim/preprocessed_telco_churn.csv
